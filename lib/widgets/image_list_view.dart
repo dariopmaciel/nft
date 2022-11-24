@@ -22,16 +22,20 @@ class _ImageListViewState extends State<ImageListView> {
   @override
   void iniState() {
     super.initState();
+
     _scrollController = ScrollController();
+
     _scrollController.addListener(() {
-      //detect if it is end of list view
+      //Detect if is end of the list view
       if (_scrollController.position.atEdge) {
         _autoScroll();
       }
     });
 
-    WidgetsBinding.instance?.addPostFrameCallback((_) {
-//    WidgetsBinding.instance.addPostFrameCallback((_) {
+//add to granted that controller has been attacted to list view
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      ;
+      //WidgetsBinding.instance?.addPostFrameCallback((_) {
       _autoScroll();
     });
   }
