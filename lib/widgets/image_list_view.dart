@@ -20,7 +20,7 @@ class _ImageListViewState extends State<ImageListView> {
   late ScrollController _scrollController;
 
   @override
-  void iniState() {
+  void initState() {
     super.initState();
 
     _scrollController = ScrollController();
