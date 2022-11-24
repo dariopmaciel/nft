@@ -84,7 +84,7 @@ class _ImageTile extends StatelessWidget {
       child: Image.asset(
         image,
         width: 130,
-      ),
+              ),
     );
   }
 }

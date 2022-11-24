@@ -41,32 +41,33 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 5,
+            bottom: 120,
             left: 24,
             right: 24,
             child: Container(
               color: Colors.black45,
               height: 80,
               child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const <Widget>[
-                    Text(
-                      "Art com NFTs",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
-                        color: Colors.white70,
-                      ),
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const <Widget>[
+                  Text(
+                    "Art com NFTs",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Colors.white70,
                     ),
-                    SizedBox(height: 12),
-                    Text(
-                      "From Flutter UI Dev learned by Dario.",
-                      style: TextStyle(
-                        color: Colors.white70,
-                        fontSize: 18,
-                      ),
+                  ),
+                  SizedBox(height: 12),
+                  Text(
+                    "Learned by Dario from Flutter UI Dev.",
+                    style: TextStyle(
+                      color: Colors.white70,
+                      fontSize: 16,
                     ),
-                  ]),
+                  ),
+                ],
+              ),
             ),
           )
         ],

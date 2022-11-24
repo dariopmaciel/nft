@@ -1,0 +1,8 @@
+{
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+    "editor.matchBrackets": "near",
+    "editor.autoClosingBrackets": "languageDefined",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
+    "editor.colorDecorators": false
+}
