@@ -33,9 +33,8 @@ class _ImageListViewState extends State<ImageListView> {
     });
 
 //add to granted that controller has been attacted to list view
+    //WidgetsBinding.instance?.addPostFrameCallback((_) {
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      ;
-      //WidgetsBinding.instance?.addPostFrameCallback((_) {
       _autoScroll();
     });
   }
