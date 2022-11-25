@@ -2,8 +2,10 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:nft/screens/nft_screen.dart';
 
 class ImageListView extends StatefulWidget {
   const ImageListView(
@@ -79,12 +81,20 @@ class _ImageTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Hero(
-      tag: image,
-      child: Image.asset(
-        image,
-        width: 130,
-              ),
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => NFTScreen(image: image)),
+        );
+      },
+      child: Hero(
+        tag: image,
+        child: Image.asset(
+          image,
+          width: 130,
+        ),
+      ),
     );
   }
 }
