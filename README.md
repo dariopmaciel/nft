@@ -1,4 +1,4 @@
-# nft
+# NFT
 
 A new Flutter project.
 
