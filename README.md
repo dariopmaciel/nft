@@ -1,6 +1,6 @@
-# NFT
+# NFT Market
 
-A new Flutter project.
+About this new Flutter project.
 
 With these apps I tried to learn code stacking, animations, blur effects and use of image assets list. 
 Due to crash in "GLIBC_2.33" - ubuntu 22.04 and some effects did not load fully, downgrade will be necessary to correction.
